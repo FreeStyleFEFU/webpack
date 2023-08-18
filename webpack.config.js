@@ -17,7 +17,7 @@ module.exports = {
     target,
     devtool,
     devServer: {
-        port: 3000,ph
+        port: 3000,
     },
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
