@@ -1,6 +1,17 @@
 body {
   background-color: $background;
   color: $text;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   user-select: none;
+}
+
+.imageJpg,
+.imagePng {
+  background-size: cover;
+  height: 300px;
+  width: 500px;
+}
+
+.imageJpg {
+  background-image: url('img/webpack.jpg');
 }
