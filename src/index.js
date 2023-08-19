@@ -1,17 +1,15 @@
+import '@babel/polyfill';
 import 'normalize.css';
 
 import './index.html'; // -_- отслеживаем изменения html
 import './index.scss';
 
-const createCalcFunction = (n) => () => console.log(2 * n);
+import { createMultiplicationFunction, sum } from "./utils/calc";
 
-const calcFour = createCalcFunction(4);
-const calcTwo = createCalcFunction(2);
+const multiplicationFour = createMultiplicationFunction(4);
 
-calcFour();
-calcFour();
-calcFour();
+multiplicationFour();
+multiplicationFour();
+multiplicationFour();
 
-calcTwo();
-calcTwo();
-calcTwo();
+console.log(sum(3, 4))
